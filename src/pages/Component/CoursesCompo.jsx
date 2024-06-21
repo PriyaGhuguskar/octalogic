@@ -92,38 +92,38 @@ const CoursesCompo = () => {
                     <table className="min-w-full ">
                         <thead>
                             <tr className="border-b border-gray-200">
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Name
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Description
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Instructor
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Instrument
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Day of Week
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     # of Students
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Price
                                 </th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900">
+                                <th className="py-4 text-left text-sm font-bold text-gray-800">
                                     Status
                                 </th>
-                                <th className="py-4 text-right text-sm font-bold text-gray-900">
+                                <th className="py-4 text-right text-sm font-bold text-gray-800">
                                     Actions
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             {filteredCourses.map((course, index) => (
-                                <tr key={index} className="border-b border-gray-200 relative">
+                                <tr key={index} className="border-b  text-gray-600 border-gray-200 relative">
                                     <td className="py-2">{course.name}</td>
                                     <td className="py-2">{course.description}</td>
                                     <td className="py-2">{course.instructor}</td>
@@ -152,7 +152,7 @@ const CoursesCompo = () => {
                                         </button>
                                     </td>
                                     {dropdownStates[index] && course.status == 'Active' ?
-                                        <div className="bg-white w-[180px] p-5 flex flex-col gap-1 rounded-md items-start                                text-gray-700 font-[500] absolute top-8 right-0 z-40">
+                                        <div className="bg-white w-[180px]  p-5 flex flex-col gap-1 rounded-md items-start                                text-gray-700 font-[500] absolute top-8 right-0 z-40">
                                             <div className="cursor-pointer">Edit course</div>
                                             <div className="cursor-pointer">Close course</div>
                                             <div className="cursor-pointer">Archive course</div>

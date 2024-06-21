@@ -26,17 +26,17 @@ const BestStudent = () => {
                     <table className="min-w-full">
                         <thead>
                             <tr className="border-b border-gray-200">
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/6">Reg. No</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/6">F. Name</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/6">L. Name</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/6">Course #</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/6">Total Fees</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/6">Reg. Date</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/6">Reg. No</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/6">F. Name</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/6">L. Name</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/6">Course #</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/6">Total Fees</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/6">Reg. Date</th>
                             </tr>
                         </thead>
                         <tbody>
                             {displayedStudents?.map((row, index) => (
-                                <tr key={index} className="border-b border-gray-200">
+                                <tr key={index} className="border-b  text-gray-600 border-gray-200">
                                     <td className="py-2 w-1/6">{row.enrNo}</td>
                                     <td className="py-2 w-1/6">{row.fName}</td>
                                     <td className="py-2 w-1/6">{row.lName}</td>

@@ -28,16 +28,16 @@ const Enrollment = () => {
                     <table className="min-w-full">
                         <thead>
                             <tr className="border-b border-gray-200">
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/5">Enr. No</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/5">S. Name</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/5">C. Name</th>
-                                <th className="py-4 text-left text-sm font-bold text-gray-900 w-1/5">Fees</th>
-                                <th className="py-2 text-sm font-bold text-gray-900 text-right w-1/5">Enr. Date</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/5">Enr. No</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/5">S. Name</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/5">C. Name</th>
+                                <th className="py-4 text-left text-sm font-bold text-gray-800 w-1/5">Fees</th>
+                                <th className="py-2 text-sm font-bold text-gray-800 text-right w-1/5">Enr. Date</th>
                             </tr>
                         </thead>
                         <tbody>
                             {displayedEnrolments?.map((row, index) => (
-                                <tr key={index} className="border-b border-gray-200">
+                                <tr key={index} className="border-b text-gray-600 border-gray-200">
                                     <td className="py-2 w-[23%]">{row.enrNo}</td>
                                     <td className="py-2 w-[23%]">{row.sName}</td>
                                     <td className="py-2 w-[23%]">{row.cName}</td>
