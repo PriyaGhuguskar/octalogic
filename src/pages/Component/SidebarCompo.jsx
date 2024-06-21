@@ -1,15 +1,19 @@
 import React from 'react'
 import home from '../../assets/home.png'
 import courses from '../../assets/courses.png'
-import logout from '../../assets/logout.png'
+import logoutpng from '../../assets/logout.png'
 import logo from '../../assets/Logo.png'
-
+import { useDispatch } from 'react-redux';
+import { logout } from '../../reduxStore/AuthStore';
 
 
 const SidebarCompo = ({ setView }) => {
-    const handleLogout = () => {
 
-    }
+    const dispatch = useDispatch();
+
+    const handleLogout = () => {
+        dispatch(logout());
+    };
     return (
         <>
             <div className='w-full h-20 bg-white sm:pt-4 fixed flex flex-row justify-between sm:w-24 sm:h-full  sm:flex-col px-5 sm:px-0 z-10'>
@@ -23,7 +27,7 @@ const SidebarCompo = ({ setView }) => {
                     </div>
                 </div>
 
-                <img src={logout} alt="" className='py-4 sm:mb-3' onClick={handleLogout} />
+                <img src={logoutpng} alt="" className='py-4 sm:mb-3' onClick={handleLogout} />
 
             </div>
         </>

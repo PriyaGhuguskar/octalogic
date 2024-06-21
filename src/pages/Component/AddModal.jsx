@@ -70,7 +70,8 @@ const AddModal = ({ isOpen, onClose }) => {
                         </select>
                         <div className="flex justify-end items-center gap-1">
                             <button
-                                type="submit"
+                                type="button"
+                                onClick={onClose}
                                 className="bg-pink-400 text-white px-4 py-2 rounded"
                             >
                                 Add Course
