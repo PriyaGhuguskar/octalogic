@@ -43,7 +43,7 @@ const LoginPage = () => {
                         required
                         type="text"
                         name='username'
-                        className=' p-2 text-black'
+                        className=' p-2 text-black bg-transparent border rounded-lg border-stone-300'
                         value={formData.username}
                         onChange={ValueChange}
                         placeholder="username"
@@ -53,13 +53,13 @@ const LoginPage = () => {
                     <input type="Password"
                         placeholder="Password"
                         required
-                        className=' p-2 text-black'
+                        className=' p-2 text-black bg-transparent border rounded-lg border-stone-300'
                         name='password'
                         value={formData.password}
                         onChange={ValueChange}
                     />
 
-                    <button className=' h-11 border py-1 text-lg bg-gray-300' type="submit">Login</button>
+                    <button className=' h-11 border font-semibold py-1 text-lg bg-gray-300' type="submit">Login</button>
                 </form>
             </div>
 
